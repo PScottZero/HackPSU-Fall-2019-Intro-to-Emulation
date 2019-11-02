@@ -66,24 +66,6 @@ nav a {
   width: 100%;
 }
 
-/* controls menu container */
-#controls {
-  z-index: var(--foreground);
-  display: none;
-  position: absolute;
-  top: 5.75em;
-  right: 0.75em;
-  border-radius: 1em;
-  padding: 2em;
-  background: white;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-}
-
-/* controls menu image */
-#controls img {
-  width: 28em;
-}
-
 /* header */
 #header {
   z-index: var(--foreground);
@@ -97,27 +79,4 @@ nav a {
   height: 100%;
   float: left;
   margin-left: 1em;
-}
-
-/* rom list container */
-#rom_list {
-  z-index: var(--foreground);
-  display: none;
-  position: absolute;
-  top: 5.75em;
-  right: 0.75em;
-  background: white;
-  border-radius: 1em;
-  padding: 2em;
-  width: 28em;
-  height: 16em;
-  line-height: 1.5;
-  overflow-y: scroll;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-}
-
-/* rom list element */
-#rom_list li {
-  list-style-type: none;
-  font-size: 20px;
 }

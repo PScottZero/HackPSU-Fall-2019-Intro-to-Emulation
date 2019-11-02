@@ -38,9 +38,10 @@ HackPSU Workshop Fall 2019
 
       <!-- navigation links -->
       <nav>
-        <a id="roms" onclick="menu_toggle(this)">Load Rom</a>
-        <a id="ctrl" onclick="menu_toggle(this)"> Controls </a>
+        <a id="roms" onclick="document.getElementById('file_input').click()">Load Rom</a>
+        <input id="file_input" type="file" name="name" style="display: none;" />
         <a href="https://en.wikipedia.org/wiki/CHIP-8"> Chip-8 Wiki </a>
+        <a href="https://github.com/PScottZero/HackPSU-Fall-2019-Intro-to-Emulation"> GitHub </a>
       </nav>
     </div>
 
@@ -52,12 +53,6 @@ HackPSU Workshop Fall 2019
 
       <!-- computer graphic -->
       <img alt="pc" src="img/ps1.svg">
-    </div>
-
-    <!-- rom list and controls panel -->
-    <div id="rom_list"></div>
-    <div id="controls">
-      <img src="img/controls.svg" alt="Controls">
     </div>
   </body>
 </html>

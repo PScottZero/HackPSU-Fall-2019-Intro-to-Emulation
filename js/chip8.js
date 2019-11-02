@@ -60,8 +60,9 @@ class Chip8 {
    * @param program - chip8 program
    */
   loadProgram(program) {
-    for (let i = 0; i < program.length; i++)
+    for (let i = 0; i < program.length; i++) {
       this.memory[this.PC + i] = program[i];
+    }   
     this.loadFont();
   }
 
@@ -131,7 +132,6 @@ class Chip8 {
   async reset() {
 
     // reset variables
-    this.opcode = 0x0;
     this.I = 0x0;
     this.delay = 0;
     this.sound = 0;
@@ -176,8 +176,6 @@ class Chip8 {
 
   /**
    * draw display
-   * 
-   * YOU CAN SET DISPLAY COLORS HERE!!!
    */
   draw() {
     let canvas = document.getElementById("chip8"); // get canvas from html

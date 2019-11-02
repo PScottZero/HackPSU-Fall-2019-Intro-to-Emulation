@@ -1,0 +1,63 @@
+<!--
+Paul Scott
+2 November 2019
+
+Intro to Emulation
+HackPSU Workshop Fall 2019
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- metadata -->
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- styles -->
+    <link href="css/desktop.css" rel="stylesheet">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/chip8.js"></script>
+
+    <!-- title and favicon -->
+    <link href="img/favicon.png" rel="icon">
+    <title>Intro To Emulation</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div id="header">
+
+      <!-- logo -->
+      <img src="img/logo.svg" alt="HackPSU Logo">
+
+      <!-- navigation links -->
+      <nav>
+        <a id="roms" onclick="menu_toggle(this)">Load Rom</a>
+        <a id="ctrl" onclick="menu_toggle(this)"> Controls </a>
+        <a href="https://en.wikipedia.org/wiki/CHIP-8"> Chip-8 Wiki </a>
+      </nav>
+    </div>
+
+    <!-- content container -->
+    <div id="content">
+
+      <!-- chip8 display -->
+      <canvas height="160px" id="chip8" width="320px"></canvas>
+
+      <!-- computer graphic -->
+      <img alt="pc" src="img/ps1.svg">
+    </div>
+
+    <!-- rom list and controls panel -->
+    <div id="rom_list"></div>
+    <div id="controls">
+      <img src="img/controls.svg" alt="Controls">
+    </div>
+  </body>
+</html>
